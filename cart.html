@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sardar Ji Pgari Center - Cart</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="cart">
+  <header class="topbar">
+    <a class="brand" href="products.html">
+      <span class="brand-bottom">Sardar Ji Pgari Center</span>
+    </a>
+    <form id="navSearchForm" class="nav-search" role="search">
+      <input id="navSearchInput" type="search" placeholder="Search turbans, fabrics, collections" />
+      <button type="submit" class="nav-search-btn">Search</button>
+    </form>
+    <nav id="mainNav" class="nav-links"></nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-header">
+      <h1>Your Cart</h1>
+      <p class="muted">Review meters, totals, and place your order.</p>
+    </section>
+
+    <section id="statusArea" class="feedback" role="status" aria-live="polite"></section>
+    <section id="loading" class="loading hidden">Loading cart...</section>
+    <section id="cartItems" class="table-wrap"></section>
+    <section class="cart-summary">
+      <p><strong>Total:</strong> <span id="cartTotal">$0.00</span></p>
+      <button id="placeOrderBtn" class="btn btn-primary">Place Order</button>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Sardar Ji Pgari Center. All rights reserved.</p>
+  </footer>
+
+  <script src="js/local_api.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
+
