@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sardar Ji Pgari Center - Orders</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="orders">
+  <header class="topbar">
+    <a class="brand" href="products.html">
+      <span class="brand-bottom">Sardar Ji Pgari Center</span>
+    </a>
+    <form id="navSearchForm" class="nav-search" role="search">
+      <input id="navSearchInput" type="search" placeholder="Search turbans, fabrics, collections" />
+      <button type="submit" class="nav-search-btn">Search</button>
+    </form>
+    <nav id="mainNav" class="nav-links"></nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-header">
+      <h1>Order History</h1>
+      <p class="muted">Track previous orders and totals.</p>
+    </section>
+
+    <section id="statusArea" class="feedback" role="status" aria-live="polite"></section>
+    <section id="loading" class="loading hidden">Loading orders...</section>
+    <section id="ordersList" class="orders-list"></section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Sardar Ji Pgari Center. All rights reserved.</p>
+  </footer>
+
+  <script src="js/local_api.js"></script>
+  <script src="js/orders.js"></script>
+</body>
+</html>
+
